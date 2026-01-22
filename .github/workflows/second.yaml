@@ -1,0 +1,9 @@
+name: second file for github actions
+
+on: push
+
+jobs:
+  secondpush:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "second example"
