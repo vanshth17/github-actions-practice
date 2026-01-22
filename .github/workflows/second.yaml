@@ -6,4 +6,11 @@ jobs:
   secondpush:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "second example"
+      - name: first step
+        run: echo "first step running"
+
+      - name: second step
+        run: echo "second step running"
+
+      - name: third step
+        run: echo "third step running"
