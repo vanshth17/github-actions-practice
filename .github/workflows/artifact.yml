@@ -1,6 +1,9 @@
 name: Artifact workflow
 
-on: push
+on:
+  push:
+    paths:
+      -  ".github/workflows/artifact.yml"
 
 jobs:
   build_artifact:
@@ -21,4 +24,5 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: uploading
+      - run: ls -R
       - run: cat uploading/hello.txt
