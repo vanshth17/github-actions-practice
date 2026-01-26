@@ -1,6 +1,6 @@
 name: second file for github actions
 
-on: push
+on: workflow_dispatch
 
 jobs:
   secondpush:
