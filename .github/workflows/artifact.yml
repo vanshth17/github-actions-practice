@@ -21,4 +21,4 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: uploading
-      - run: cat output/hello.txt
+      - run: cat uploading/hello.txt
